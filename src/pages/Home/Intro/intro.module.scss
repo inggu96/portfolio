@@ -1,0 +1,29 @@
+@use "../../../styles/constants/" as c;
+@use "../../../styles/mixins" as m;
+
+.introWrap {
+  @include m.flex(center, center, column);
+  width: 900px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  line-height: 20px;
+  .introContent {
+    @include m.flex(center, center, column);
+    width: 100%;
+    > span {
+      color: c.$C_INFO;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    > div {
+      > span {
+        background-color: gray;
+        border-radius: 2px;
+        display: inline;
+        padding: 2px;
+        color: c.$C_INFO;
+      }
+    }
+  }
+}

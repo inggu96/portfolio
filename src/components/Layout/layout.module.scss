@@ -1,19 +1,8 @@
-@use '../../styles/constants' as c;
-@use '../../styles/mixins' as m;
+@use "../../styles/constants" as c;
+@use "../../styles/mixins" as m;
 
 .wrap {
-  @include m.flex();
-  width: 100vw;
   background-color: c.$C_BACKGROUND;
-
-  > section {
-    padding: c.$S_LAYOUT_PADDING;
-  }
-  .sidebar {
-    flex: 0 0 280px;
-  }
-
-  .content {
-    flex: 1;
-  }
+  height: 100vh;
+  overflow-y: scroll;
 }
