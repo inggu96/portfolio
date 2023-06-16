@@ -25,8 +25,12 @@ const Intro = () => {
           FrameWork / Library : <span>React</span> <span>Redux </span>
           <span>Mui</span>
         </div>
-        <div>Markup : HTML , CSS , SCSS , Emotion</div>
-        <div>Tool : Git , GitHub</div>
+        <div>
+          Markup : <span>HTML , CSS , SCSS , Emotion</span>
+        </div>
+        <div>
+          Tool : <span>Git , GitHub</span>
+        </div>
       </div>
     </section>
   );

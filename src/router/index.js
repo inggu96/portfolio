@@ -4,11 +4,12 @@ import {
   Route,
 } from "react-router-dom";
 import { Layout } from "../components";
-import { Home } from "../pages";
+import { Home, Movie } from "../pages";
 
 const route = (
   <Route element={<Layout />}>
     <Route path="/" element={<Home />} />
+    <Route path="/movie" element={<Movie />} />
   </Route>
 );
 

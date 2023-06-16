@@ -33,3 +33,10 @@
     border-radius: 50%;
   }
 }
+.projectItem {
+  > h1 {
+    color: c.$C_INFO;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
