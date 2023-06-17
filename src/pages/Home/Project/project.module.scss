@@ -4,12 +4,45 @@
 .projectWrap {
   @include m.flex(center, center, column);
   width: 900px;
-  height: 400px;
+  height: 500px;
+  > h1 {
+    color: c.$C_INFO;
+    font-size: 28px;
+    text-align: left;
+    display: block;
+    width: 900px;
+  }
 }
 .projectContent {
   @include m.flex(space-between);
   width: 900px;
+  height: 400px;
 }
 .projectCard {
   width: 350px;
+}
+.projectCaption {
+  width: 600px;
+  padding: 50px;
+  text-align: left;
+}
+.accent {
+  color: c.$C_INFO;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: left;
+}
+.dividerM {
+  width: 550px;
+  border: 1px solid c.$C_DIVIDER;
+  height: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.accentM {
+  > span {
+    color: c.$C_INFO;
+    background-color: c.$C_DIVIDER;
+    border-radius: 5px;
+  }
 }

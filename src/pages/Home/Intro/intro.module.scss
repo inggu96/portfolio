@@ -4,25 +4,31 @@
 .introWrap {
   @include m.flex(center, center, column);
   width: 900px;
-  height: 100px;
+  height: 250px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   line-height: 20px;
+
   .introContent {
-    @include m.flex(center, center, column);
-    width: 100%;
+    @include m.flex(space-between);
+    width: 230px;
     > span {
-      color: c.$C_INFO;
-      font-size: 30px;
-      line-height: 50px;
+      margin-left: 50px;
     }
+
     > div {
-      > span {
-        background-color: #ededeb;
-        border-radius: 5px;
-        display: inline;
-        padding: 2px;
-        color: c.$C_INFO;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      > h1 {
+        font-size: 23px;
+        line-height: 37px;
+        font-weight: bold;
+        color: #444444;
+      }
+      > p {
+        width: 120px;
+        line-height: 24px;
       }
     }
   }

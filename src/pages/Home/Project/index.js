@@ -8,6 +8,7 @@ import { CardActionArea } from "@mui/material";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import { useNavigate } from "react-router-dom";
+import { Divider } from "../../../components/Common";
 
 const Project = () => {
   const navigate = useNavigate();
@@ -17,9 +18,8 @@ const Project = () => {
   };
   return (
     <section className={styles.projectWrap}>
-      <div>Project</div>
-      <p> 팀프로젝트 1개 , 개인프로젝트 1개</p>
-
+      <h1>💻 프로젝트</h1>
+      <Divider />
       <div className={styles.projectContent}>
         <div onClick={CardMove} className={styles.projectCard}>
           <Card sx={{ maxWidth: 450 }}>
@@ -49,6 +49,34 @@ const Project = () => {
               </CardContent>
             </CardActionArea>
           </Card>
+        </div>
+        <div className={styles.projectCaption}>
+          <p className={styles.accent}>무비셀렉터</p>
+          <div className={styles.dividerM}></div>
+          <p>
+            코드스테이츠에서 처음으로 진행하게된 팀 프로젝트이며 총 1달동안
+            진행하였습니다
+          </p>
+          <p>
+            내용 : 영화 평점을 기록하는 사이트이며 기본적인 주제임에도
+            타과제들과 차별화를 위해 프리뷰모달 등 기획단계에서부터 많은 노력을
+            기울였습니다
+          </p>
+          <p>
+            <p className={styles.accentM}>
+              Language : <span>JavaScript</span>
+            </p>
+            <p className={styles.accentM}>
+              FrameWork / Library : <span>React</span> <span>Redux </span>
+              <span>Mui</span>
+            </p>
+            <p className={styles.accentM}>
+              Markup : <span>HTML , CSS , SCSS , Emotion</span>
+            </p>
+            <p className={styles.accentM}>
+              Tool : <span>Git , GitHub</span>
+            </p>
+          </p>
         </div>
       </div>
     </section>

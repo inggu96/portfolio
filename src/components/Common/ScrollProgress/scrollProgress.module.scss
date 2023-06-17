@@ -1,0 +1,13 @@
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+.scrollWrap {
+  height: 2000px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,9 @@
+@use "../../../styles/constants" as c;
+@use "../../../styles/mixins" as m;
+.divider {
+  width: 900px;
+  border: 1px solid c.$C_DIVIDER;
+  height: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

@@ -4,7 +4,8 @@
 .titleWrap {
   @include m.flex(center, center, column);
   width: 100%;
-  height: 350px;
+  height: 420px;
+  color: #444444;
   > p {
     font-size: 50px;
     text-align: center;
@@ -14,24 +15,42 @@
   @include m.flex(space-between);
   width: 750px;
   > h1 {
+    width: 300px;
     font-size: 50px;
     text-align: left;
     line-height: 70px;
-    > span {
-      color: c.$C_INFO;
-      font-size: 50px;
-    }
+    border: 1px solid black;
   }
-  > img {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  > span {
+    color: c.$C_INFO;
+    font-size: 50px;
   }
+}
+.titleItem {
+  > h1 {
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+    text-align: left;
+    line-height: 70px;
+  }
+  > p {
+    height: 80px;
+    font-size: 50px;
+    text-align: left;
+    line-height: 70px;
+  }
+}
+.titleImg {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px rgb(96, 96, 96, 0.6);
 }
 .projectItem {
   > h1 {
@@ -39,4 +58,23 @@
     font-size: 30px;
     line-height: 50px;
   }
+}
+.titleCaption {
+  @include m.flex(center, center);
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  height: 130px;
+  padding: 20px;
+  margin-top: 20px;
+  > span {
+    font-size: 28px;
+    line-height: 35px;
+    width: 40px;
+  }
+}
+
+.codeIcon {
+  font-size: 50px;
 }
