@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./movieTitle.module.scss";
 
 const MovieTitle = () => {
@@ -15,8 +16,19 @@ const MovieTitle = () => {
       <div className={styles.projectItem}>
         <h1>🎨 무비셀렉터</h1>
         <p>애정하는 영화 리뷰 및 평점 등록 사이트</p>
-        <p>Team name : 무비셀렉터 ( 영화 평점사이트 제작 ) </p>
-        <p> Team members : 주양아(팀장), 이인국, 구성미, 신현중 </p>
+        <p>제작기간 : 2023.03.13 - 2023.04.14</p>
+        <p>
+          <span>Team name</span> : 무비셀렉터
+        </p>
+        <p>
+          <span>Team members </span>: 주양아(팀장), 이인국, 구성미, 신현중
+        </p>
+        <p>
+          <span>Link </span>:
+          <a href=" http://test123bukit.s3-website.ap-northeast-2.amazonaws.com/">
+            http://test123bukit.s3-website.ap-northeast-2.amazonaws.com/
+          </a>
+        </p>
       </div>
     </section>
   );
