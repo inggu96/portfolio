@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CodeIcon from "@mui/icons-material/Code";
-
-import CodeOffIcon from "@mui/icons-material/CodeOff";
 import styles from "./title.module.scss";
 
 const Title = () => {
@@ -46,12 +43,22 @@ const Title = () => {
         </div>
       </div>
       <div className={styles.titleCaption}>
-        <span>👋</span>
         <p>
-          지속적인 성장과 직관적인 UI개발을 즐기는 프론트엔드개발자 이인국입니다
-          !<br />
-          부족함을 매워가며 얻는 성취감과 함께 즐기면서 나아가겠습니다 !
-          <br />
+          <span>👋</span> 퍼블리셔와 프론트엔드를 공부하며 지속적으로 성장하는
+          개발자 이인국입니다!
+        </p>
+        <p>
+          <span></span>{" "}
+        </p>
+        <p>
+          <a href="https://github.com/inggu96">
+            💻 GitHub : https://github.com/inggu96
+          </a>
+        </p>
+        <p>
+          <a href="https://velog.io/@96_inggu">
+            🕶️ Blog : https://velog.io/@96_inggu
+          </a>
         </p>
       </div>
     </section>

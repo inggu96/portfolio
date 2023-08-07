@@ -43,7 +43,7 @@ const MovieIntro = () => {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     <p>- react-slick 캐러셀을 구현해 포스터 슬라이드화 </p>
-                    <p>- 클릭 시 해당영화 프리뷰 </p>
+                    <p>- 클릭 시 해당영화 프리뷰모달 안내 </p>
                   </Typography>
                 </CardContent>
               </CardActionArea>

@@ -6,4 +6,7 @@
   height: 0.5px;
   margin-top: 10px;
   margin-bottom: 15px;
+  @include m.mobile {
+    width: 450px;
+  }
 }

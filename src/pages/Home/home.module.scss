@@ -2,9 +2,9 @@
 @use "../../styles/mixins" as m;
 
 .homeWrap {
-  @include m.flex(center, center, column);
   text-align: center;
   scroll-behavior: smooth;
+  height: 100vh;
 }
 .progressBar {
   position: fixed;
@@ -12,6 +12,6 @@
   left: 0;
   right: 0;
   height: 10px;
-  background: var(--red);
+  background: black;
   transform-origin: 0%;
 }

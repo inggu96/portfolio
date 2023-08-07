@@ -6,6 +6,7 @@
   width: 100%;
   height: 420px;
   color: #444444;
+
   > p {
     font-size: 50px;
     text-align: center;
@@ -14,6 +15,10 @@
 .titleContent {
   @include m.flex(space-between);
   width: 750px;
+  @include m.mobile {
+    width: 450px;
+  }
+
   > h1 {
     width: 300px;
     font-size: 50px;
@@ -51,6 +56,10 @@
   height: 200px;
   border-radius: 50%;
   box-shadow: 4px 4px 4px 4px rgb(96, 96, 96, 0.6);
+  @include m.mobile {
+    text-align: center;
+    display: none;
+  }
 }
 .projectItem {
   > h1 {
@@ -60,18 +69,26 @@
   }
 }
 .titleCaption {
-  @include m.flex(center, center);
+  @include m.flex();
+  flex-direction: column;
   border: 1px solid #e0e0e0;
-  text-align: left;
-  font-size: 20px;
+  justify-self: flex-start;
+  align-items: flex-start;
+  font-size: 1.2rem;
   line-height: 30px;
-  height: 130px;
+  height: 150px;
   padding: 20px;
-  margin-top: 20px;
-  > span {
-    font-size: 28px;
-    line-height: 35px;
-    width: 40px;
+  @include m.mobile {
+    font-size: 0.8rem;
+    width: 450px;
+  }
+  > p:first-child {
+    line-height: 50px;
+  }
+  > p {
+    > a {
+      color: black;
+    }
   }
 }
 

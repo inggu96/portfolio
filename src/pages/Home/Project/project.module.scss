@@ -14,27 +14,27 @@
   }
 }
 .projectContent {
-  @include m.flex(space-between);
+  @include m.flex(center, center, column);
   width: 900px;
   height: 400px;
-}
-.projectCard {
-  width: 350px;
-}
-.projectCaption {
-  width: 600px;
   padding: 50px;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  place-items: center;
+  @include m.mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projectTitle {
+    > p {
+      text-align: left;
+    }
+  }
 }
-.accent {
-  color: c.$C_INFO;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: left;
-}
+
 .dividerM {
-  width: 550px;
   border: 1px solid c.$C_DIVIDER;
+  width: 500px;
   height: 0.5px;
   margin-top: 10px;
   margin-bottom: 15px;
