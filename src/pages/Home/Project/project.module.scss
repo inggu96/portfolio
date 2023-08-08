@@ -3,7 +3,7 @@
 
 .projectWrap {
   @include m.flex(center, center, column);
-  width: 900px;
+  width: 100%;
   height: 500px;
   > h1 {
     color: c.$C_INFO;
@@ -11,23 +11,84 @@
     text-align: left;
     display: block;
     width: 900px;
+    @include m.mobile {
+      width: 400px;
+    }
+  }
+}
+.cardWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include m.mobile {
+    grid-template-columns: repeat(1, 1fr);
+    height: 400px;
   }
 }
 .projectContent {
   @include m.flex(center, center, column);
-  width: 900px;
+  width: 450px;
   height: 400px;
-  padding: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
   place-items: center;
   @include m.mobile {
     grid-template-columns: repeat(1, 1fr);
+    height: 550px;
   }
   .projectTitle {
     > p {
       text-align: left;
+    }
+  }
+  .projectCard {
+    width: 400px;
+    height: 550px;
+  }
+  .buttonWrap {
+    @include m.flex(space-between);
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 15;
+    > div {
+      width: 100px;
+      height: 50px;
+      z-index: 5;
+    }
+    .goOut {
+      > button {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          scale: (1.2);
+        }
+      }
+    }
+    .goDetail {
+      width: 80px;
+      height: 40px;
+      background-color: #d6d6d6;
+      border: none;
+      border-radius: 15px;
+      font-size: 1rem;
+      transition: 0.3s;
+      cursor: pointer;
+      > a {
+        color: #242424;
+      }
+      &:hover {
+        background-color: #444444;
+      }
+      &:hover a {
+        color: #fff;
+      }
     }
   }
 }
@@ -38,11 +99,29 @@
   height: 0.5px;
   margin-top: 10px;
   margin-bottom: 15px;
+  @include m.mobile {
+    width: 400px;
+  }
+}
+.projectTitle {
+  height: 250px;
+  @include m.mobile {
+    height: 250px;
+  }
+}
+.projectText {
+  width: 100%;
+  height: 90px;
+  overflow-y: scroll;
 }
 .accentM {
+  line-height: 40px;
   > span {
     color: c.$C_INFO;
     background-color: c.$C_DIVIDER;
     border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 5px;
+    padding: 5px;
   }
 }

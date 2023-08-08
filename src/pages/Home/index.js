@@ -13,8 +13,9 @@ const Home = () => {
       <motion.div animate={{ y: 0 }} initial={{ y: 150 }}>
         <Title />
         <Intro />
-        <Skills />
         <Experience />
+        <Skills />
+
         <Project />
       </motion.div>
     </main>

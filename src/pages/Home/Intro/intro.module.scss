@@ -14,13 +14,20 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @include m.mobile {
-    width: 100%;
+    width: 50%;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .introContent {
-    @include m.flex(space-between);
+    @include m.flex(center, center, space-between);
     width: 230px;
+    margin-left: 50px;
+    @include m.mobile {
+      width: 100px;
+
+      margin-left: 220px;
+    }
+
     > span {
       margin-left: 50px;
     }

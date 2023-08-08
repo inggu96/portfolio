@@ -6,7 +6,9 @@
   width: 100%;
   height: 420px;
   color: #444444;
-
+  @include m.mobile {
+    height: 600px;
+  }
   > p {
     font-size: 50px;
     text-align: center;
@@ -16,6 +18,7 @@
   @include m.flex(space-between);
   width: 750px;
   @include m.mobile {
+    flex-direction: column;
     width: 450px;
   }
 
@@ -58,7 +61,6 @@
   box-shadow: 4px 4px 4px 4px rgb(96, 96, 96, 0.6);
   @include m.mobile {
     text-align: center;
-    display: none;
   }
 }
 .projectItem {
@@ -79,8 +81,8 @@
   height: 150px;
   padding: 20px;
   @include m.mobile {
-    font-size: 0.8rem;
-    width: 450px;
+    font-size: 0.9rem;
+    width: 480px;
   }
   > p:first-child {
     line-height: 50px;

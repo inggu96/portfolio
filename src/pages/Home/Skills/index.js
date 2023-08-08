@@ -25,21 +25,30 @@ const Skills = () => {
             </div>
             <div>
               <img
-                src="https://techstack-generator.vercel.app/sass-icon.svg"
-                alt="icon"
-                width="65"
-                height="65"
-              />
-              <p>Scss</p>
-            </div>
-            <div>
-              <img
                 src="https://techstack-generator.vercel.app/js-icon.svg"
                 alt="icon"
                 width="65"
                 height="65"
               />
               <p>JavaScript</p>
+            </div>
+            <div>
+              <img
+                src="https://techstack-generator.vercel.app/ts-icon.svg"
+                alt="icon"
+                width="65"
+                height="65"
+              />
+              <p>TypeScript</p>
+            </div>
+            <div>
+              <img
+                src="https://techstack-generator.vercel.app/sass-icon.svg"
+                alt="icon"
+                width="65"
+                height="65"
+              />
+              <p>Scss</p>
             </div>
             <div>
               <img
@@ -62,48 +71,40 @@ const Skills = () => {
 
             <div>
               <img
-                src="https://techstack-generator.vercel.app/react-icon.svg"
+                src="https://profile.pongdang.me/images/techStack/recoil-img.png"
                 alt="icon"
                 width="65"
                 height="65"
               />
-              <p>React</p>
+              <p>Recoil</p>
             </div>
             <div>
               <img
-                src="https://techstack-generator.vercel.app/sass-icon.svg"
+                src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
                 alt="icon"
                 width="65"
                 height="65"
               />
-              <p>Scss</p>
+              <p>Style-component</p>
             </div>
             <div>
               <img
-                src="https://techstack-generator.vercel.app/js-icon.svg"
+                src="https://techstack-generator.vercel.app/restapi-icon.svg"
                 alt="icon"
                 width="65"
                 height="65"
               />
-              <p>JavaScript</p>
+              <p>Restful-Api</p>
             </div>
+
             <div>
               <img
-                src="https://techstack-generator.vercel.app/redux-icon.svg"
+                src="https://techstack-generator.vercel.app/aws-icon.svg"
                 alt="icon"
                 width="65"
                 height="65"
               />
-              <p>Redux</p>
-            </div>
-            <div>
-              <img
-                src="https://techstack-generator.vercel.app/github-icon.svg"
-                alt="icon"
-                width="65"
-                height="65"
-              />
-              <p>Git & GitHub</p>
+              <p>AWS S3</p>
             </div>
           </div>
         </div>

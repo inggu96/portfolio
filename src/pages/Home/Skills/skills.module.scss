@@ -4,7 +4,7 @@
 .skilsWrap {
   @include m.flex(center, center, column);
   width: 900px;
-  height: 600px;
+  height: 400px;
 
   > h1 {
     color: c.$C_INFO;
@@ -37,6 +37,7 @@
   grid-template-columns: repeat(5, 1fr);
   width: 900px;
   letter-spacing: 15px;
+  row-gap: 40px;
   @include m.mobile {
     width: 450px;
   }
