@@ -23,13 +23,9 @@
     width: 230px;
     margin-left: 50px;
     @include m.mobile {
-      width: 100px;
-
-      margin-left: 220px;
-    }
-
-    > span {
-      margin-left: 50px;
+      margin-left: 40px;
+      width: 100%;
+      gap: 10px;
     }
 
     > div {

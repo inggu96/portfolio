@@ -13,7 +13,7 @@
   text-align: left;
   padding: 10px;
   @include m.mobile {
-    width: 440px;
+    width: 100vw;
   }
 
   > h1 {
@@ -24,7 +24,7 @@
   }
   > div {
     > p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 }

@@ -3,9 +3,12 @@
 
 .skilsWrap {
   @include m.flex(center, center, column);
-  width: 900px;
+  width: 100%;
   height: 400px;
-
+  @include m.mobile {
+    width: 100%;
+    height: 600px;
+  }
   > h1 {
     color: c.$C_INFO;
     font-size: 28px;
@@ -13,33 +16,43 @@
     display: block;
     width: 900px;
     @include m.mobile {
-      width: 450px;
+      width: 380px;
+      margin-left: 20px;
     }
   }
 }
 
 .skillsItemWrap {
-  @include m.flex(center, center, column);
+  @include m.flex();
+  flex-direction: column;
+  justify-content: center;
   border: 3px solid c.$C_DIVIDER;
-  width: 900px;
+  width: 90%;
   height: 500px;
   @include m.mobile {
     width: 450px;
+    height: 600px;
   }
 }
 .skillsTitle {
   width: 900px;
   height: 50px;
   font-size: 25px;
+
+  @include m.mobile {
+    width: 100%;
+  }
 }
 .skillsItem {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  place-items: center;
   width: 900px;
   letter-spacing: 15px;
-  row-gap: 40px;
+  row-gap: 30px;
   @include m.mobile {
-    width: 450px;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   > h1 {

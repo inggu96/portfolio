@@ -3,8 +3,12 @@
 
 .wrap {
   @include m.flex(center, center, column);
-  max-width: 1400px;
+  width: 100%;
   background-color: c.$C_BACKGROUND;
   height: 100vh;
   overflow-y: scroll;
+  @include m.mobile {
+    max-width: 480px;
+    overflow-x: hidden;
+  }
 }

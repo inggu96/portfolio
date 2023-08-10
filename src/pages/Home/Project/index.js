@@ -5,26 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-import { useNavigate } from "react-router-dom";
 import { Divider } from "../../../components/Common";
 
 const Project = () => {
-  const navigate = useNavigate();
-
-  const CardMove = () => {
-    navigate("/movie");
-  };
-  const goDemo = () => {
-    navigate("http://test123bukit.s3-website.ap-northeast-2.amazonaws.com/");
-  };
-  const goGit = () => {
-    navigate("http://test123bukit.s3-website.ap-northeast-2.amazonaws.com/");
-  };
-  const goDetail = () => {
-    navigate("/movie");
-  };
   return (
     <section className={styles.projectWrap}>
       <h1>💻 프로젝트</h1>
@@ -72,6 +55,7 @@ const Project = () => {
                       <p>제작기간 : 2023.03.13 - 2023.04.14</p>
                       <div className={styles.projectText}>
                         <p> 🎬 영화 평점 및 리뷰 등록사이트 </p>
+                        <p>담당파트(메인페이지 , 프리뷰기능)</p>
                         <p>메인페이지</p>
                         <p>- react-slick 캐러셀을 구현해 포스터 슬라이드화 </p>
                         <p>- 클릭 시 해당영화 프리뷰모달 안내 </p>
@@ -118,7 +102,7 @@ const Project = () => {
                   </div>
                   <div>
                     <button className={styles.goDetail}>
-                      <a href="http://applemusic.s3-website.ap-northeast-2.amazonaws.com/">
+                      <a href="http://weply.s3-website.ap-northeast-2.amazonaws.com/">
                         👉 보러가기
                       </a>
                     </button>

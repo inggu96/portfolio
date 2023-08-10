@@ -44,7 +44,7 @@ const Title = () => {
       </div>
       <div className={styles.titleCaption}>
         <p>
-          <span>👋</span> 퍼블리셔와 프론트엔드를 공부하며 지속적으로 성장하는
+          <span>👋</span> 퍼블리싱와 프론트엔드를 공부하며 지속적으로 성장하는
           개발자 이인국입니다!
         </p>
         <p>

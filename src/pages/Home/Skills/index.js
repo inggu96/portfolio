@@ -10,9 +10,7 @@ const Skills = () => {
         <h1>💻 기술 스택</h1>
         <Divider />
         <div className={styles.skillsItemWrap}>
-          <div className={styles.skillsTitle}>
-            <p>FrameWork & Library</p>
-          </div>
+          <p>FrameWork & Library</p>
           <div className={styles.skillsItem}>
             <div>
               <img
